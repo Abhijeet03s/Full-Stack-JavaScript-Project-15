@@ -34,6 +34,11 @@ body {
 .caret {
   margin-left: 15px;
 }
+.menu-icon {
+  display: none;
+  height: 30px;
+  cursor: pointer;
+}
 /* Header Section */
 .header {
   display: flex;
@@ -236,15 +241,14 @@ body {
   margin-top: 100px;
   margin-bottom: 40px;
   padding: 0 80px;
-}   
+}
 .contact-section .contact-card {
   background-color: #1e1e1e;
   display: flex;
   justify-content: space-between;
-  padding: 70px 40px;
   align-items: center;
+  padding: 70px 100px;
   height: 200px;
-  flex-wrap: wrap;
 }
 .contact-section .contact-card .left h1 {
   font-size: 3rem;
@@ -255,13 +259,12 @@ body {
   font-size: 1rem;
   font-weight: 100;
 }
-.contact-section .contact-card .right {
+.contact-card .right-btn {
   padding-right: 100px;
-  
 }
-.contact-section .contact-card .right button {
+.contact-section .contact-card .right-btn button {
   background-color: #f83241;
-  color:#fff;
+  color: #fff;
   border: none;
   padding: 18px 60px;
   cursor: pointer;
@@ -269,17 +272,6 @@ body {
   text-transform: uppercase;
 }
 /* Footer Section */
-.footer-nav ul {
-  list-style-type: none;
-  display: flex;
-  gap: 40px;
-  padding: 0 80px;
-  justify-content: center;
-  margin: 100px auto 50px auto;
-  font-size: 0.8rem;
-  font-weight: 300;
-  text-transform: uppercase;
-}
 .footer {
   position: absolute;
   left: 0;
@@ -296,10 +288,162 @@ body {
 .footer-img img {
   width: 100px;
 }
+.footer-nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+  padding: 0 80px;
+  justify-content: center;
+  margin: 100px auto 50px auto;
+  font-size: 0.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
 .icons {
   text-align: center;
   margin-left: 190px;
 }
 .icons img:not(:last-child) {
   margin-right: 40px;
+}
+@media only screen and (max-width: 1200px) {
+  .navbar {
+    padding: 10px 40px;
+  }
+  .navbar .logo img {
+    width: 60%;
+  }
+  .header-right {
+    margin-right: 100px;
+  }
+  .feature {
+    padding-top: 80px;
+  }
+  .contact-section .contact-card .left h1 {
+    font-size: 2.5rem;
+  }
+  .contact-section .contact-card .left p {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbar .list {
+    display: none;
+  }
+  .menu-icon {
+    display: inline-block;
+  }
+  .header-right {
+    margin-right: 50px;
+  }
+  .header .box {
+    width: 40rem;
+  }
+  .header-right h1 {
+    font-size: 3rem;
+  }
+  .header-right p {
+    font-size: 0.8rem;
+  }
+  .heading-r .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  .heading-l p {
+    font-size: 0.8rem;
+  }
+  .contact-section {
+    padding: 0 40px;
+  }
+  .contact-section .contact-card .left h1 {
+    font-size: 2rem;
+  }
+  .contact-section .contact-card .left p {
+    font-size: 0.7rem;
+  }
+  .contact-section .contact-card .right-btn button {
+    padding: 10px 30px;
+  }
+  .contact-card .right-btn {
+    padding-right: 10px;
+  }
+  .footer {
+    left: -80px;
+  }
+  .icons img:not(:last-child) {
+    margin-right: 20px;
+  }
+  .icons {
+    margin-left: 50px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .header {
+    flex-direction: column;
+  }
+  .header-right {
+    margin-left: 100px;
+    margin-top: 20px;
+  }
+  .header .box {
+    width: 20rem;
+    height: 35rem;
+  }
+  .header-right h1 {
+    font-size: 2.2rem;
+  }
+  .header-left .image img {
+    width: 50vw;
+  }
+  .header-right .btn {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+  .cards .card {
+    padding: 10px;
+  }
+  .card h1 {
+    margin: 10px 0;
+  }
+  .card p {
+    font-size: 1rem;
+  }
+  .stats {
+    flex-direction: column;
+  }
+  .right .card {
+    width: 10rem;
+    margin-top: 20px;
+    margin-left: 23px;
+  }
+  .feature {
+    flex-direction: column;
+    margin-top: -100px;
+  }
+  .feature {
+    padding: 0px 20px;
+  }
+  .heading-r .btn {
+    margin-top: 15px;
+  }
+  .card-img {
+    width: 20rem;
+    height: 200px;
+  }
+  .card-1 h1 {
+    font-size: 1rem;
+  }
+  .card-1 span button {
+    font-size: 0.7rem;
+  }
+  .contact-section {
+    display: none;
+  }
+  .footer {
+    left: -150px;
+  }
+  .icons {
+    text-align: center;
+    margin-left: -100px;
+  }
 }
