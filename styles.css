@@ -319,11 +319,17 @@ body {
   .feature {
     padding-top: 80px;
   }
+  .contact-section .contact-card {
+    flex-wrap: wrap;
+  }
   .contact-section .contact-card .left h1 {
     font-size: 2.5rem;
   }
   .contact-section .contact-card .left p {
     font-size: 0.9rem;
+  }
+  .contact-section .contact-card .right-btn button {
+    margin-top: 20px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -391,6 +397,9 @@ body {
   }
   .header-right h1 {
     font-size: 2.2rem;
+  }
+  .header-right h4{
+    font-size: 1rem;
   }
   .header-left .image img {
     width: 50vw;
