@@ -319,6 +319,9 @@ body {
   .feature {
     padding-top: 80px;
   }
+  .service-btn  button{
+    color: #fff;
+  }
   .contact-section .contact-card {
     flex-wrap: wrap;
   }
@@ -408,6 +411,7 @@ body {
     padding: 10px;
     font-size: 0.8rem;
   }
+
   .cards .card {
     padding: 10px;
   }
